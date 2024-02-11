@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_dynamic_calls
+
 import 'dart:convert';
 
 import 'package:http/http.dart';
@@ -15,8 +17,7 @@ class OpenWeatherApi {
   final Client _client;
   final String appId;
 
-  Future<CurrentWeather> getCurrentWeather(
-      {required LocationData locationData, required bool imperialUnits}) async {
+  Future<CurrentWeather> getCurrentWeather({required LocationData locationData, required bool imperialUnits}) async {
     final Uri uri = Uri.parse('$_baseUrl/weather');
 
     final Response response = await _client.get(
@@ -30,16 +31,13 @@ class OpenWeatherApi {
       ),
     );
 
-    final Map<String, dynamic> json =
-        jsonDecode(response.body) as Map<String, dynamic>;
+    final Map<String, dynamic> json = jsonDecode(response.body) as Map<String, dynamic>;
 
     return CurrentWeather.fromJson(json);
   }
 
   Future<ForecastWeather> getWeatherForecast(
-      {required LocationData locationData,
-      required bool imperialUnits,
-      int cnt = 40}) async {
+      {required LocationData locationData, required bool imperialUnits, int cnt = 40}) async {
     final Uri uri = Uri.parse('$_baseUrl/forecast');
 
     final Response response = await _client.get(
@@ -53,8 +51,7 @@ class OpenWeatherApi {
       ),
     );
 
-    final Map<String, dynamic> json =
-        jsonDecode(response.body) as Map<String, dynamic>;
+    final Map<String, dynamic> json = jsonDecode(response.body) as Map<String, dynamic>;
 
     return ForecastWeather.fromJson(json);
   }
@@ -74,8 +71,7 @@ class OpenWeatherApi {
       ),
     );
 
-    final Map<String, dynamic> json =
-        jsonDecode(response.body) as Map<String, dynamic>;
+    final Map<String, dynamic> json = jsonDecode(response.body) as Map<String, dynamic>;
 
     return AirPollutionData.fromJson(json);
   }
@@ -101,8 +97,7 @@ class OpenWeatherApi {
     final List<dynamic> json = jsonDecode(response.body) as List<dynamic>;
 
     // ignore: avoid_dynamic_calls
-    final LocationData locationData = LocationData(
-        lat: json.first['lat'] as double, lon: json.first['lon'] as double);
+    final LocationData locationData = LocationData(lat: json.first['lat'] as double, lon: json.first['lon'] as double);
 
     return locationData;
   }
