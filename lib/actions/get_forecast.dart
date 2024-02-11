@@ -9,10 +9,8 @@ part 'get_forecast.freezed.dart';
 class GetForecast with _$GetForecast implements AppAction {
   const factory GetForecast() = GetForecastStart;
 
-  const factory GetForecast.successful(ForecastWeather forecastWeather) =
-      GetForecastSuccessful;
+  const factory GetForecast.successful(ForecastWeather forecastWeather) = GetForecastSuccessful;
 
   @Implements<ErrorAction>()
-  const factory GetForecast.error(Object error, StackTrace stackTrace) =
-      GetForecastError;
+  const factory GetForecast.error(Object error, StackTrace stackTrace) = GetForecastError;
 }

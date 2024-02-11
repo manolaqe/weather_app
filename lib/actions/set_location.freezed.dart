@@ -19,14 +19,12 @@ mixin _$SetLocation {
   LocationData get locationData => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SetLocationCopyWith<SetLocation> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetLocationCopyWith<SetLocation> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SetLocationCopyWith<$Res> {
-  factory $SetLocationCopyWith(
-          SetLocation value, $Res Function(SetLocation) then) =
+  factory $SetLocationCopyWith(SetLocation value, $Res Function(SetLocation) then) =
       _$SetLocationCopyWithImpl<$Res, SetLocation>;
   @useResult
   $Res call({LocationData locationData});
@@ -35,8 +33,7 @@ abstract class $SetLocationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SetLocationCopyWithImpl<$Res, $Val extends SetLocation>
-    implements $SetLocationCopyWith<$Res> {
+class _$SetLocationCopyWithImpl<$Res, $Val extends SetLocation> implements $SetLocationCopyWith<$Res> {
   _$SetLocationCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -67,10 +64,8 @@ class _$SetLocationCopyWithImpl<$Res, $Val extends SetLocation>
 }
 
 /// @nodoc
-abstract class _$$SetLocation$ImplCopyWith<$Res>
-    implements $SetLocationCopyWith<$Res> {
-  factory _$$SetLocation$ImplCopyWith(
-          _$SetLocation$Impl value, $Res Function(_$SetLocation$Impl) then) =
+abstract class _$$SetLocation$ImplCopyWith<$Res> implements $SetLocationCopyWith<$Res> {
+  factory _$$SetLocation$ImplCopyWith(_$SetLocation$Impl value, $Res Function(_$SetLocation$Impl) then) =
       __$$SetLocation$ImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -81,11 +76,9 @@ abstract class _$$SetLocation$ImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$SetLocation$ImplCopyWithImpl<$Res>
-    extends _$SetLocationCopyWithImpl<$Res, _$SetLocation$Impl>
+class __$$SetLocation$ImplCopyWithImpl<$Res> extends _$SetLocationCopyWithImpl<$Res, _$SetLocation$Impl>
     implements _$$SetLocation$ImplCopyWith<$Res> {
-  __$$SetLocation$ImplCopyWithImpl(
-      _$SetLocation$Impl _value, $Res Function(_$SetLocation$Impl) _then)
+  __$$SetLocation$ImplCopyWithImpl(_$SetLocation$Impl _value, $Res Function(_$SetLocation$Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -120,8 +113,7 @@ class _$SetLocation$Impl implements SetLocation$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SetLocation$Impl &&
-            (identical(other.locationData, locationData) ||
-                other.locationData == locationData));
+            (identical(other.locationData, locationData) || other.locationData == locationData));
   }
 
   @override
@@ -135,13 +127,11 @@ class _$SetLocation$Impl implements SetLocation$ {
 }
 
 abstract class SetLocation$ implements SetLocation {
-  const factory SetLocation$(final LocationData locationData) =
-      _$SetLocation$Impl;
+  const factory SetLocation$(final LocationData locationData) = _$SetLocation$Impl;
 
   @override
   LocationData get locationData;
   @override
   @JsonKey(ignore: true)
-  _$$SetLocation$ImplCopyWith<_$SetLocation$Impl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SetLocation$ImplCopyWith<_$SetLocation$Impl> get copyWith => throw _privateConstructorUsedError;
 }

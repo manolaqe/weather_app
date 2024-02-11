@@ -13,6 +13,5 @@ class Sys with _$Sys {
     @Default(0) int sunset,
   }) = Sys$;
 
-  factory Sys.fromJson(Map<String, dynamic> json) =>
-      _$SysFromJson(Map<String, dynamic>.from(json));
+  factory Sys.fromJson(Map<String, dynamic> json) => _$SysFromJson(Map<String, dynamic>.from(json));
 }

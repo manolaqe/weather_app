@@ -9,10 +9,8 @@ part 'get_current_weather.freezed.dart';
 class GetCurrentWeather with _$GetCurrentWeather implements AppAction {
   const factory GetCurrentWeather() = GetCurrentWeatherStart;
 
-  const factory GetCurrentWeather.successful(CurrentWeather currentWeather) =
-      GetCurrentWeatherSuccessful;
+  const factory GetCurrentWeather.successful(CurrentWeather currentWeather) = GetCurrentWeatherSuccessful;
 
   @Implements<ErrorAction>()
-  const factory GetCurrentWeather.error(Object error, StackTrace stackTrace) =
-      GetCurrentWeatherError;
+  const factory GetCurrentWeather.error(Object error, StackTrace stackTrace) = GetCurrentWeatherError;
 }

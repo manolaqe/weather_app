@@ -64,14 +64,12 @@ mixin _$GetCoordinates {
 
 /// @nodoc
 abstract class $GetCoordinatesCopyWith<$Res> {
-  factory $GetCoordinatesCopyWith(
-          GetCoordinates value, $Res Function(GetCoordinates) then) =
+  factory $GetCoordinatesCopyWith(GetCoordinates value, $Res Function(GetCoordinates) then) =
       _$GetCoordinatesCopyWithImpl<$Res, GetCoordinates>;
 }
 
 /// @nodoc
-class _$GetCoordinatesCopyWithImpl<$Res, $Val extends GetCoordinates>
-    implements $GetCoordinatesCopyWith<$Res> {
+class _$GetCoordinatesCopyWithImpl<$Res, $Val extends GetCoordinates> implements $GetCoordinatesCopyWith<$Res> {
   _$GetCoordinatesCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -82,8 +80,8 @@ class _$GetCoordinatesCopyWithImpl<$Res, $Val extends GetCoordinates>
 
 /// @nodoc
 abstract class _$$GetCoordinatesStartImplCopyWith<$Res> {
-  factory _$$GetCoordinatesStartImplCopyWith(_$GetCoordinatesStartImpl value,
-          $Res Function(_$GetCoordinatesStartImpl) then) =
+  factory _$$GetCoordinatesStartImplCopyWith(
+          _$GetCoordinatesStartImpl value, $Res Function(_$GetCoordinatesStartImpl) then) =
       __$$GetCoordinatesStartImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String query});
@@ -93,8 +91,8 @@ abstract class _$$GetCoordinatesStartImplCopyWith<$Res> {
 class __$$GetCoordinatesStartImplCopyWithImpl<$Res>
     extends _$GetCoordinatesCopyWithImpl<$Res, _$GetCoordinatesStartImpl>
     implements _$$GetCoordinatesStartImplCopyWith<$Res> {
-  __$$GetCoordinatesStartImplCopyWithImpl(_$GetCoordinatesStartImpl _value,
-      $Res Function(_$GetCoordinatesStartImpl) _then)
+  __$$GetCoordinatesStartImplCopyWithImpl(
+      _$GetCoordinatesStartImpl _value, $Res Function(_$GetCoordinatesStartImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -139,8 +137,7 @@ class _$GetCoordinatesStartImpl implements GetCoordinatesStart {
   @override
   @pragma('vm:prefer-inline')
   _$$GetCoordinatesStartImplCopyWith<_$GetCoordinatesStartImpl> get copyWith =>
-      __$$GetCoordinatesStartImplCopyWithImpl<_$GetCoordinatesStartImpl>(
-          this, _$identity);
+      __$$GetCoordinatesStartImplCopyWithImpl<_$GetCoordinatesStartImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -212,20 +209,17 @@ class _$GetCoordinatesStartImpl implements GetCoordinatesStart {
 }
 
 abstract class GetCoordinatesStart implements GetCoordinates {
-  const factory GetCoordinatesStart(final String query) =
-      _$GetCoordinatesStartImpl;
+  const factory GetCoordinatesStart(final String query) = _$GetCoordinatesStartImpl;
 
   String get query;
   @JsonKey(ignore: true)
-  _$$GetCoordinatesStartImplCopyWith<_$GetCoordinatesStartImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetCoordinatesStartImplCopyWith<_$GetCoordinatesStartImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetCoordinatesSuccessfulImplCopyWith<$Res> {
   factory _$$GetCoordinatesSuccessfulImplCopyWith(
-          _$GetCoordinatesSuccessfulImpl value,
-          $Res Function(_$GetCoordinatesSuccessfulImpl) then) =
+          _$GetCoordinatesSuccessfulImpl value, $Res Function(_$GetCoordinatesSuccessfulImpl) then) =
       __$$GetCoordinatesSuccessfulImplCopyWithImpl<$Res>;
   @useResult
   $Res call({LocationData locationData});
@@ -238,8 +232,7 @@ class __$$GetCoordinatesSuccessfulImplCopyWithImpl<$Res>
     extends _$GetCoordinatesCopyWithImpl<$Res, _$GetCoordinatesSuccessfulImpl>
     implements _$$GetCoordinatesSuccessfulImplCopyWith<$Res> {
   __$$GetCoordinatesSuccessfulImplCopyWithImpl(
-      _$GetCoordinatesSuccessfulImpl _value,
-      $Res Function(_$GetCoordinatesSuccessfulImpl) _then)
+      _$GetCoordinatesSuccessfulImpl _value, $Res Function(_$GetCoordinatesSuccessfulImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -282,8 +275,7 @@ class _$GetCoordinatesSuccessfulImpl implements GetCoordinatesSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetCoordinatesSuccessfulImpl &&
-            (identical(other.locationData, locationData) ||
-                other.locationData == locationData));
+            (identical(other.locationData, locationData) || other.locationData == locationData));
   }
 
   @override
@@ -292,9 +284,8 @@ class _$GetCoordinatesSuccessfulImpl implements GetCoordinatesSuccessful {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetCoordinatesSuccessfulImplCopyWith<_$GetCoordinatesSuccessfulImpl>
-      get copyWith => __$$GetCoordinatesSuccessfulImplCopyWithImpl<
-          _$GetCoordinatesSuccessfulImpl>(this, _$identity);
+  _$$GetCoordinatesSuccessfulImplCopyWith<_$GetCoordinatesSuccessfulImpl> get copyWith =>
+      __$$GetCoordinatesSuccessfulImplCopyWithImpl<_$GetCoordinatesSuccessfulImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -366,19 +357,18 @@ class _$GetCoordinatesSuccessfulImpl implements GetCoordinatesSuccessful {
 }
 
 abstract class GetCoordinatesSuccessful implements GetCoordinates {
-  const factory GetCoordinatesSuccessful(final LocationData locationData) =
-      _$GetCoordinatesSuccessfulImpl;
+  const factory GetCoordinatesSuccessful(final LocationData locationData) = _$GetCoordinatesSuccessfulImpl;
 
   LocationData get locationData;
   @JsonKey(ignore: true)
-  _$$GetCoordinatesSuccessfulImplCopyWith<_$GetCoordinatesSuccessfulImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$GetCoordinatesSuccessfulImplCopyWith<_$GetCoordinatesSuccessfulImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetCoordinatesErrorImplCopyWith<$Res> {
-  factory _$$GetCoordinatesErrorImplCopyWith(_$GetCoordinatesErrorImpl value,
-          $Res Function(_$GetCoordinatesErrorImpl) then) =
+  factory _$$GetCoordinatesErrorImplCopyWith(
+          _$GetCoordinatesErrorImpl value, $Res Function(_$GetCoordinatesErrorImpl) then) =
       __$$GetCoordinatesErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
@@ -388,8 +378,8 @@ abstract class _$$GetCoordinatesErrorImplCopyWith<$Res> {
 class __$$GetCoordinatesErrorImplCopyWithImpl<$Res>
     extends _$GetCoordinatesCopyWithImpl<$Res, _$GetCoordinatesErrorImpl>
     implements _$$GetCoordinatesErrorImplCopyWith<$Res> {
-  __$$GetCoordinatesErrorImplCopyWithImpl(_$GetCoordinatesErrorImpl _value,
-      $Res Function(_$GetCoordinatesErrorImpl) _then)
+  __$$GetCoordinatesErrorImplCopyWithImpl(
+      _$GetCoordinatesErrorImpl _value, $Res Function(_$GetCoordinatesErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -429,20 +419,17 @@ class _$GetCoordinatesErrorImpl implements GetCoordinatesError {
         (other.runtimeType == runtimeType &&
             other is _$GetCoordinatesErrorImpl &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetCoordinatesErrorImplCopyWith<_$GetCoordinatesErrorImpl> get copyWith =>
-      __$$GetCoordinatesErrorImplCopyWithImpl<_$GetCoordinatesErrorImpl>(
-          this, _$identity);
+      __$$GetCoordinatesErrorImplCopyWithImpl<_$GetCoordinatesErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -514,13 +501,10 @@ class _$GetCoordinatesErrorImpl implements GetCoordinatesError {
 }
 
 abstract class GetCoordinatesError implements GetCoordinates, ErrorAction {
-  const factory GetCoordinatesError(
-          final Object error, final StackTrace stackTrace) =
-      _$GetCoordinatesErrorImpl;
+  const factory GetCoordinatesError(final Object error, final StackTrace stackTrace) = _$GetCoordinatesErrorImpl;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$GetCoordinatesErrorImplCopyWith<_$GetCoordinatesErrorImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetCoordinatesErrorImplCopyWith<_$GetCoordinatesErrorImpl> get copyWith => throw _privateConstructorUsedError;
 }

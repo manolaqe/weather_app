@@ -11,6 +11,5 @@ class Wind with _$Wind {
     @Default(0) double gust,
   }) = Wind$;
 
-  factory Wind.fromJson(Map<String, dynamic> json) =>
-      _$WindFromJson(Map<String, dynamic>.from(json));
+  factory Wind.fromJson(Map<String, dynamic> json) => _$WindFromJson(Map<String, dynamic>.from(json));
 }

@@ -9,6 +9,5 @@ class MainPollution with _$MainPollution {
     @Default(0) int aqi,
   }) = MainPollution$;
 
-  factory MainPollution.fromJson(Map<String, dynamic> json) =>
-      _$MainPollutionFromJson(Map<String, dynamic>.from(json));
+  factory MainPollution.fromJson(Map<String, dynamic> json) => _$MainPollutionFromJson(Map<String, dynamic>.from(json));
 }

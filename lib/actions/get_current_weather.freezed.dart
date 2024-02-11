@@ -64,8 +64,7 @@ mixin _$GetCurrentWeather {
 
 /// @nodoc
 abstract class $GetCurrentWeatherCopyWith<$Res> {
-  factory $GetCurrentWeatherCopyWith(
-          GetCurrentWeather value, $Res Function(GetCurrentWeather) then) =
+  factory $GetCurrentWeatherCopyWith(GetCurrentWeather value, $Res Function(GetCurrentWeather) then) =
       _$GetCurrentWeatherCopyWithImpl<$Res, GetCurrentWeather>;
 }
 
@@ -83,8 +82,7 @@ class _$GetCurrentWeatherCopyWithImpl<$Res, $Val extends GetCurrentWeather>
 /// @nodoc
 abstract class _$$GetCurrentWeatherStartImplCopyWith<$Res> {
   factory _$$GetCurrentWeatherStartImplCopyWith(
-          _$GetCurrentWeatherStartImpl value,
-          $Res Function(_$GetCurrentWeatherStartImpl) then) =
+          _$GetCurrentWeatherStartImpl value, $Res Function(_$GetCurrentWeatherStartImpl) then) =
       __$$GetCurrentWeatherStartImplCopyWithImpl<$Res>;
 }
 
@@ -93,8 +91,7 @@ class __$$GetCurrentWeatherStartImplCopyWithImpl<$Res>
     extends _$GetCurrentWeatherCopyWithImpl<$Res, _$GetCurrentWeatherStartImpl>
     implements _$$GetCurrentWeatherStartImplCopyWith<$Res> {
   __$$GetCurrentWeatherStartImplCopyWithImpl(
-      _$GetCurrentWeatherStartImpl _value,
-      $Res Function(_$GetCurrentWeatherStartImpl) _then)
+      _$GetCurrentWeatherStartImpl _value, $Res Function(_$GetCurrentWeatherStartImpl) _then)
       : super(_value, _then);
 }
 
@@ -110,9 +107,7 @@ class _$GetCurrentWeatherStartImpl implements GetCurrentWeatherStart {
 
   @override
   bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$GetCurrentWeatherStartImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$GetCurrentWeatherStartImpl);
   }
 
   @override
@@ -194,8 +189,7 @@ abstract class GetCurrentWeatherStart implements GetCurrentWeather {
 /// @nodoc
 abstract class _$$GetCurrentWeatherSuccessfulImplCopyWith<$Res> {
   factory _$$GetCurrentWeatherSuccessfulImplCopyWith(
-          _$GetCurrentWeatherSuccessfulImpl value,
-          $Res Function(_$GetCurrentWeatherSuccessfulImpl) then) =
+          _$GetCurrentWeatherSuccessfulImpl value, $Res Function(_$GetCurrentWeatherSuccessfulImpl) then) =
       __$$GetCurrentWeatherSuccessfulImplCopyWithImpl<$Res>;
   @useResult
   $Res call({CurrentWeather currentWeather});
@@ -205,12 +199,10 @@ abstract class _$$GetCurrentWeatherSuccessfulImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$GetCurrentWeatherSuccessfulImplCopyWithImpl<$Res>
-    extends _$GetCurrentWeatherCopyWithImpl<$Res,
-        _$GetCurrentWeatherSuccessfulImpl>
+    extends _$GetCurrentWeatherCopyWithImpl<$Res, _$GetCurrentWeatherSuccessfulImpl>
     implements _$$GetCurrentWeatherSuccessfulImplCopyWith<$Res> {
   __$$GetCurrentWeatherSuccessfulImplCopyWithImpl(
-      _$GetCurrentWeatherSuccessfulImpl _value,
-      $Res Function(_$GetCurrentWeatherSuccessfulImpl) _then)
+      _$GetCurrentWeatherSuccessfulImpl _value, $Res Function(_$GetCurrentWeatherSuccessfulImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -253,8 +245,7 @@ class _$GetCurrentWeatherSuccessfulImpl implements GetCurrentWeatherSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetCurrentWeatherSuccessfulImpl &&
-            (identical(other.currentWeather, currentWeather) ||
-                other.currentWeather == currentWeather));
+            (identical(other.currentWeather, currentWeather) || other.currentWeather == currentWeather));
   }
 
   @override
@@ -263,9 +254,8 @@ class _$GetCurrentWeatherSuccessfulImpl implements GetCurrentWeatherSuccessful {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetCurrentWeatherSuccessfulImplCopyWith<_$GetCurrentWeatherSuccessfulImpl>
-      get copyWith => __$$GetCurrentWeatherSuccessfulImplCopyWithImpl<
-          _$GetCurrentWeatherSuccessfulImpl>(this, _$identity);
+  _$$GetCurrentWeatherSuccessfulImplCopyWith<_$GetCurrentWeatherSuccessfulImpl> get copyWith =>
+      __$$GetCurrentWeatherSuccessfulImplCopyWithImpl<_$GetCurrentWeatherSuccessfulImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -337,20 +327,18 @@ class _$GetCurrentWeatherSuccessfulImpl implements GetCurrentWeatherSuccessful {
 }
 
 abstract class GetCurrentWeatherSuccessful implements GetCurrentWeather {
-  const factory GetCurrentWeatherSuccessful(
-      final CurrentWeather currentWeather) = _$GetCurrentWeatherSuccessfulImpl;
+  const factory GetCurrentWeatherSuccessful(final CurrentWeather currentWeather) = _$GetCurrentWeatherSuccessfulImpl;
 
   CurrentWeather get currentWeather;
   @JsonKey(ignore: true)
-  _$$GetCurrentWeatherSuccessfulImplCopyWith<_$GetCurrentWeatherSuccessfulImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$GetCurrentWeatherSuccessfulImplCopyWith<_$GetCurrentWeatherSuccessfulImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetCurrentWeatherErrorImplCopyWith<$Res> {
   factory _$$GetCurrentWeatherErrorImplCopyWith(
-          _$GetCurrentWeatherErrorImpl value,
-          $Res Function(_$GetCurrentWeatherErrorImpl) then) =
+          _$GetCurrentWeatherErrorImpl value, $Res Function(_$GetCurrentWeatherErrorImpl) then) =
       __$$GetCurrentWeatherErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
@@ -361,8 +349,7 @@ class __$$GetCurrentWeatherErrorImplCopyWithImpl<$Res>
     extends _$GetCurrentWeatherCopyWithImpl<$Res, _$GetCurrentWeatherErrorImpl>
     implements _$$GetCurrentWeatherErrorImplCopyWith<$Res> {
   __$$GetCurrentWeatherErrorImplCopyWithImpl(
-      _$GetCurrentWeatherErrorImpl _value,
-      $Res Function(_$GetCurrentWeatherErrorImpl) _then)
+      _$GetCurrentWeatherErrorImpl _value, $Res Function(_$GetCurrentWeatherErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -402,20 +389,17 @@ class _$GetCurrentWeatherErrorImpl implements GetCurrentWeatherError {
         (other.runtimeType == runtimeType &&
             other is _$GetCurrentWeatherErrorImpl &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetCurrentWeatherErrorImplCopyWith<_$GetCurrentWeatherErrorImpl>
-      get copyWith => __$$GetCurrentWeatherErrorImplCopyWithImpl<
-          _$GetCurrentWeatherErrorImpl>(this, _$identity);
+  _$$GetCurrentWeatherErrorImplCopyWith<_$GetCurrentWeatherErrorImpl> get copyWith =>
+      __$$GetCurrentWeatherErrorImplCopyWithImpl<_$GetCurrentWeatherErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -486,15 +470,12 @@ class _$GetCurrentWeatherErrorImpl implements GetCurrentWeatherError {
   }
 }
 
-abstract class GetCurrentWeatherError
-    implements GetCurrentWeather, ErrorAction {
-  const factory GetCurrentWeatherError(
-          final Object error, final StackTrace stackTrace) =
-      _$GetCurrentWeatherErrorImpl;
+abstract class GetCurrentWeatherError implements GetCurrentWeather, ErrorAction {
+  const factory GetCurrentWeatherError(final Object error, final StackTrace stackTrace) = _$GetCurrentWeatherErrorImpl;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$GetCurrentWeatherErrorImplCopyWith<_$GetCurrentWeatherErrorImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$GetCurrentWeatherErrorImplCopyWith<_$GetCurrentWeatherErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

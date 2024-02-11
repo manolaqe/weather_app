@@ -9,10 +9,8 @@ part 'get_coordinates.freezed.dart';
 class GetCoordinates with _$GetCoordinates implements AppAction {
   const factory GetCoordinates(String query) = GetCoordinatesStart;
 
-  const factory GetCoordinates.successful(LocationData locationData) =
-      GetCoordinatesSuccessful;
+  const factory GetCoordinates.successful(LocationData locationData) = GetCoordinatesSuccessful;
 
   @Implements<ErrorAction>()
-  const factory GetCoordinates.error(Object error, StackTrace stackTrace) =
-      GetCoordinatesError;
+  const factory GetCoordinates.error(Object error, StackTrace stackTrace) = GetCoordinatesError;
 }

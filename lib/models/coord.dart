@@ -10,6 +10,5 @@ class Coord with _$Coord {
     @Default(0) double lat,
   }) = Coord$;
 
-  factory Coord.fromJson(Map<String, dynamic> json) =>
-      _$CoordFromJson(Map<String, dynamic>.from(json));
+  factory Coord.fromJson(Map<String, dynamic> json) => _$CoordFromJson(Map<String, dynamic>.from(json));
 }

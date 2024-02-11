@@ -5,9 +5,7 @@ part 'location_data.g.dart';
 
 @freezed
 class LocationData with _$LocationData {
-  const factory LocationData({required double lat, required double lon}) =
-      LocationData$;
+  const factory LocationData({required double lat, required double lon}) = LocationData$;
 
-  factory LocationData.fromJson(Map<String, dynamic> json) =>
-      _$LocationDataFromJson(Map<String, dynamic>.from(json));
+  factory LocationData.fromJson(Map<String, dynamic> json) => _$LocationDataFromJson(Map<String, dynamic>.from(json));
 }

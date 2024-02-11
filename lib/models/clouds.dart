@@ -9,6 +9,5 @@ class Clouds with _$Clouds {
     @Default(0) int all,
   }) = Clouds$;
 
-  factory Clouds.fromJson(Map<String, dynamic> json) =>
-      _$CloudsFromJson(Map<String, dynamic>.from(json));
+  factory Clouds.fromJson(Map<String, dynamic> json) => _$CloudsFromJson(Map<String, dynamic>.from(json));
 }

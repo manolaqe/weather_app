@@ -17,8 +17,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final Client client = Client();
-  final OpenWeatherApi api =
-      OpenWeatherApi(client, '2ede6351d981312c95d45e1b5c51849e');
+  final OpenWeatherApi api = OpenWeatherApi(client, '2ede6351d981312c95d45e1b5c51849e');
   final Location location = Location();
   final LocationApi locationApi = LocationApi(location: location);
   final AppEpics appEpic = AppEpics(api, locationApi);

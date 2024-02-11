@@ -18,6 +18,5 @@ class Main with _$Main {
     @Default(0) @JsonKey(name: 'grnd_level') double grndLevel,
   }) = Main$;
 
-  factory Main.fromJson(Map<String, dynamic> json) =>
-      _$MainFromJson(Map<String, dynamic>.from(json));
+  factory Main.fromJson(Map<String, dynamic> json) => _$MainFromJson(Map<String, dynamic>.from(json));
 }

@@ -64,14 +64,12 @@ mixin _$GetForecast {
 
 /// @nodoc
 abstract class $GetForecastCopyWith<$Res> {
-  factory $GetForecastCopyWith(
-          GetForecast value, $Res Function(GetForecast) then) =
+  factory $GetForecastCopyWith(GetForecast value, $Res Function(GetForecast) then) =
       _$GetForecastCopyWithImpl<$Res, GetForecast>;
 }
 
 /// @nodoc
-class _$GetForecastCopyWithImpl<$Res, $Val extends GetForecast>
-    implements $GetForecastCopyWith<$Res> {
+class _$GetForecastCopyWithImpl<$Res, $Val extends GetForecast> implements $GetForecastCopyWith<$Res> {
   _$GetForecastCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -82,17 +80,14 @@ class _$GetForecastCopyWithImpl<$Res, $Val extends GetForecast>
 
 /// @nodoc
 abstract class _$$GetForecastStartImplCopyWith<$Res> {
-  factory _$$GetForecastStartImplCopyWith(_$GetForecastStartImpl value,
-          $Res Function(_$GetForecastStartImpl) then) =
+  factory _$$GetForecastStartImplCopyWith(_$GetForecastStartImpl value, $Res Function(_$GetForecastStartImpl) then) =
       __$$GetForecastStartImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetForecastStartImplCopyWithImpl<$Res>
-    extends _$GetForecastCopyWithImpl<$Res, _$GetForecastStartImpl>
+class __$$GetForecastStartImplCopyWithImpl<$Res> extends _$GetForecastCopyWithImpl<$Res, _$GetForecastStartImpl>
     implements _$$GetForecastStartImplCopyWith<$Res> {
-  __$$GetForecastStartImplCopyWithImpl(_$GetForecastStartImpl _value,
-      $Res Function(_$GetForecastStartImpl) _then)
+  __$$GetForecastStartImplCopyWithImpl(_$GetForecastStartImpl _value, $Res Function(_$GetForecastStartImpl) _then)
       : super(_value, _then);
 }
 
@@ -108,8 +103,7 @@ class _$GetForecastStartImpl implements GetForecastStart {
 
   @override
   bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetForecastStartImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$GetForecastStartImpl);
   }
 
   @override
@@ -191,8 +185,7 @@ abstract class GetForecastStart implements GetForecast {
 /// @nodoc
 abstract class _$$GetForecastSuccessfulImplCopyWith<$Res> {
   factory _$$GetForecastSuccessfulImplCopyWith(
-          _$GetForecastSuccessfulImpl value,
-          $Res Function(_$GetForecastSuccessfulImpl) then) =
+          _$GetForecastSuccessfulImpl value, $Res Function(_$GetForecastSuccessfulImpl) then) =
       __$$GetForecastSuccessfulImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ForecastWeather forecastWeather});
@@ -204,8 +197,8 @@ abstract class _$$GetForecastSuccessfulImplCopyWith<$Res> {
 class __$$GetForecastSuccessfulImplCopyWithImpl<$Res>
     extends _$GetForecastCopyWithImpl<$Res, _$GetForecastSuccessfulImpl>
     implements _$$GetForecastSuccessfulImplCopyWith<$Res> {
-  __$$GetForecastSuccessfulImplCopyWithImpl(_$GetForecastSuccessfulImpl _value,
-      $Res Function(_$GetForecastSuccessfulImpl) _then)
+  __$$GetForecastSuccessfulImplCopyWithImpl(
+      _$GetForecastSuccessfulImpl _value, $Res Function(_$GetForecastSuccessfulImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -248,8 +241,7 @@ class _$GetForecastSuccessfulImpl implements GetForecastSuccessful {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$GetForecastSuccessfulImpl &&
-            (identical(other.forecastWeather, forecastWeather) ||
-                other.forecastWeather == forecastWeather));
+            (identical(other.forecastWeather, forecastWeather) || other.forecastWeather == forecastWeather));
   }
 
   @override
@@ -258,9 +250,8 @@ class _$GetForecastSuccessfulImpl implements GetForecastSuccessful {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$GetForecastSuccessfulImplCopyWith<_$GetForecastSuccessfulImpl>
-      get copyWith => __$$GetForecastSuccessfulImplCopyWithImpl<
-          _$GetForecastSuccessfulImpl>(this, _$identity);
+  _$$GetForecastSuccessfulImplCopyWith<_$GetForecastSuccessfulImpl> get copyWith =>
+      __$$GetForecastSuccessfulImplCopyWithImpl<_$GetForecastSuccessfulImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -332,30 +323,25 @@ class _$GetForecastSuccessfulImpl implements GetForecastSuccessful {
 }
 
 abstract class GetForecastSuccessful implements GetForecast {
-  const factory GetForecastSuccessful(final ForecastWeather forecastWeather) =
-      _$GetForecastSuccessfulImpl;
+  const factory GetForecastSuccessful(final ForecastWeather forecastWeather) = _$GetForecastSuccessfulImpl;
 
   ForecastWeather get forecastWeather;
   @JsonKey(ignore: true)
-  _$$GetForecastSuccessfulImplCopyWith<_$GetForecastSuccessfulImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$GetForecastSuccessfulImplCopyWith<_$GetForecastSuccessfulImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$GetForecastErrorImplCopyWith<$Res> {
-  factory _$$GetForecastErrorImplCopyWith(_$GetForecastErrorImpl value,
-          $Res Function(_$GetForecastErrorImpl) then) =
+  factory _$$GetForecastErrorImplCopyWith(_$GetForecastErrorImpl value, $Res Function(_$GetForecastErrorImpl) then) =
       __$$GetForecastErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$GetForecastErrorImplCopyWithImpl<$Res>
-    extends _$GetForecastCopyWithImpl<$Res, _$GetForecastErrorImpl>
+class __$$GetForecastErrorImplCopyWithImpl<$Res> extends _$GetForecastCopyWithImpl<$Res, _$GetForecastErrorImpl>
     implements _$$GetForecastErrorImplCopyWith<$Res> {
-  __$$GetForecastErrorImplCopyWithImpl(_$GetForecastErrorImpl _value,
-      $Res Function(_$GetForecastErrorImpl) _then)
+  __$$GetForecastErrorImplCopyWithImpl(_$GetForecastErrorImpl _value, $Res Function(_$GetForecastErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -395,20 +381,17 @@ class _$GetForecastErrorImpl implements GetForecastError {
         (other.runtimeType == runtimeType &&
             other is _$GetForecastErrorImpl &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$GetForecastErrorImplCopyWith<_$GetForecastErrorImpl> get copyWith =>
-      __$$GetForecastErrorImplCopyWithImpl<_$GetForecastErrorImpl>(
-          this, _$identity);
+      __$$GetForecastErrorImplCopyWithImpl<_$GetForecastErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -480,12 +463,10 @@ class _$GetForecastErrorImpl implements GetForecastError {
 }
 
 abstract class GetForecastError implements GetForecast, ErrorAction {
-  const factory GetForecastError(
-      final Object error, final StackTrace stackTrace) = _$GetForecastErrorImpl;
+  const factory GetForecastError(final Object error, final StackTrace stackTrace) = _$GetForecastErrorImpl;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$GetForecastErrorImplCopyWith<_$GetForecastErrorImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GetForecastErrorImplCopyWith<_$GetForecastErrorImpl> get copyWith => throw _privateConstructorUsedError;
 }

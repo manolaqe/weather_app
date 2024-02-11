@@ -9,10 +9,8 @@ part 'get_air_pollution_data.freezed.dart';
 class GetAirPollutionData with _$GetAirPollutionData implements AppAction {
   const factory GetAirPollutionData() = GetAirPollutionDataStart;
 
-  const factory GetAirPollutionData.successful(
-      AirPollutionData airPollutionData) = GetAirPollutionDataSuccessful;
+  const factory GetAirPollutionData.successful(AirPollutionData airPollutionData) = GetAirPollutionDataSuccessful;
 
   @Implements<ErrorAction>()
-  const factory GetAirPollutionData.error(Object error, StackTrace stackTrace) =
-      GetAirPollutionDataError;
+  const factory GetAirPollutionData.error(Object error, StackTrace stackTrace) = GetAirPollutionDataError;
 }

@@ -12,6 +12,5 @@ class Weather with _$Weather {
     @Default('') String icon,
   }) = Weather$;
 
-  factory Weather.fromJson(Map<String, dynamic> json) =>
-      _$WeatherFromJson(Map<String, dynamic>.from(json));
+  factory Weather.fromJson(Map<String, dynamic> json) => _$WeatherFromJson(Map<String, dynamic>.from(json));
 }

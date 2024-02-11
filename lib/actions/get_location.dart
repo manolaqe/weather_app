@@ -9,10 +9,8 @@ part 'get_location.freezed.dart';
 class GetLocation with _$GetLocation implements AppAction {
   const factory GetLocation() = GetLocationStart;
 
-  const factory GetLocation.successful(LocationData locationData) =
-      GetLocationSuccessful;
+  const factory GetLocation.successful(LocationData locationData) = GetLocationSuccessful;
 
   @Implements<ErrorAction>()
-  const factory GetLocation.error(Object error, StackTrace stackTrace) =
-      GetLocationError;
+  const factory GetLocation.error(Object error, StackTrace stackTrace) = GetLocationError;
 }

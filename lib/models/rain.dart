@@ -12,6 +12,5 @@ class Rain with _$Rain {
     @Default(0) @JsonKey(name: '3h') double the3H,
   }) = Rain$;
 
-  factory Rain.fromJson(Map<String, dynamic> json) =>
-      _$RainFromJson(Map<String, dynamic>.from(json));
+  factory Rain.fromJson(Map<String, dynamic> json) => _$RainFromJson(Map<String, dynamic>.from(json));
 }

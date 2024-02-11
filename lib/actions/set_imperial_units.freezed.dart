@@ -19,22 +19,19 @@ mixin _$SetImperialUnits {
   bool get imperialUnits => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $SetImperialUnitsCopyWith<SetImperialUnits> get copyWith =>
-      throw _privateConstructorUsedError;
+  $SetImperialUnitsCopyWith<SetImperialUnits> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SetImperialUnitsCopyWith<$Res> {
-  factory $SetImperialUnitsCopyWith(
-          SetImperialUnits value, $Res Function(SetImperialUnits) then) =
+  factory $SetImperialUnitsCopyWith(SetImperialUnits value, $Res Function(SetImperialUnits) then) =
       _$SetImperialUnitsCopyWithImpl<$Res, SetImperialUnits>;
   @useResult
   $Res call({bool imperialUnits});
 }
 
 /// @nodoc
-class _$SetImperialUnitsCopyWithImpl<$Res, $Val extends SetImperialUnits>
-    implements $SetImperialUnitsCopyWith<$Res> {
+class _$SetImperialUnitsCopyWithImpl<$Res, $Val extends SetImperialUnits> implements $SetImperialUnitsCopyWith<$Res> {
   _$SetImperialUnitsCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -57,10 +54,8 @@ class _$SetImperialUnitsCopyWithImpl<$Res, $Val extends SetImperialUnits>
 }
 
 /// @nodoc
-abstract class _$$SetImperialUnits$ImplCopyWith<$Res>
-    implements $SetImperialUnitsCopyWith<$Res> {
-  factory _$$SetImperialUnits$ImplCopyWith(_$SetImperialUnits$Impl value,
-          $Res Function(_$SetImperialUnits$Impl) then) =
+abstract class _$$SetImperialUnits$ImplCopyWith<$Res> implements $SetImperialUnitsCopyWith<$Res> {
+  factory _$$SetImperialUnits$ImplCopyWith(_$SetImperialUnits$Impl value, $Res Function(_$SetImperialUnits$Impl) then) =
       __$$SetImperialUnits$ImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -68,11 +63,9 @@ abstract class _$$SetImperialUnits$ImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$SetImperialUnits$ImplCopyWithImpl<$Res>
-    extends _$SetImperialUnitsCopyWithImpl<$Res, _$SetImperialUnits$Impl>
+class __$$SetImperialUnits$ImplCopyWithImpl<$Res> extends _$SetImperialUnitsCopyWithImpl<$Res, _$SetImperialUnits$Impl>
     implements _$$SetImperialUnits$ImplCopyWith<$Res> {
-  __$$SetImperialUnits$ImplCopyWithImpl(_$SetImperialUnits$Impl _value,
-      $Res Function(_$SetImperialUnits$Impl) _then)
+  __$$SetImperialUnits$ImplCopyWithImpl(_$SetImperialUnits$Impl _value, $Res Function(_$SetImperialUnits$Impl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -107,8 +100,7 @@ class _$SetImperialUnits$Impl implements SetImperialUnits$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SetImperialUnits$Impl &&
-            (identical(other.imperialUnits, imperialUnits) ||
-                other.imperialUnits == imperialUnits));
+            (identical(other.imperialUnits, imperialUnits) || other.imperialUnits == imperialUnits));
   }
 
   @override
@@ -118,18 +110,15 @@ class _$SetImperialUnits$Impl implements SetImperialUnits$ {
   @override
   @pragma('vm:prefer-inline')
   _$$SetImperialUnits$ImplCopyWith<_$SetImperialUnits$Impl> get copyWith =>
-      __$$SetImperialUnits$ImplCopyWithImpl<_$SetImperialUnits$Impl>(
-          this, _$identity);
+      __$$SetImperialUnits$ImplCopyWithImpl<_$SetImperialUnits$Impl>(this, _$identity);
 }
 
 abstract class SetImperialUnits$ implements SetImperialUnits {
-  const factory SetImperialUnits$(final bool imperialUnits) =
-      _$SetImperialUnits$Impl;
+  const factory SetImperialUnits$(final bool imperialUnits) = _$SetImperialUnits$Impl;
 
   @override
   bool get imperialUnits;
   @override
   @JsonKey(ignore: true)
-  _$$SetImperialUnits$ImplCopyWith<_$SetImperialUnits$Impl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SetImperialUnits$ImplCopyWith<_$SetImperialUnits$Impl> get copyWith => throw _privateConstructorUsedError;
 }
