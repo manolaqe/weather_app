@@ -18,5 +18,6 @@ class City with _$City {
     @Default(0) int sunset,
   }) = City$;
 
-  factory City.fromJson(Map<String, dynamic> json) => _$CityFromJson(Map<String, dynamic>.from(json));
+  factory City.fromJson(Map<String, dynamic> json) =>
+      _$CityFromJson(Map<String, dynamic>.from(json));
 }

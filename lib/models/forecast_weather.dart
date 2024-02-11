@@ -10,7 +10,7 @@ part 'forecast_weather.g.dart';
 class ForecastWeather with _$ForecastWeather {
   const factory ForecastWeather({
     @Default('') String cod,
-    @Default('') String message,
+    @Default(0) int message,
     @Default(0) int cnt,
     @Default(<ForecastElement>[]) List<ForecastElement> list,
     required City city,

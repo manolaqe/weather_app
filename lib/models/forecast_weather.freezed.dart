@@ -21,7 +21,7 @@ ForecastWeather _$ForecastWeatherFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$ForecastWeather {
   String get cod => throw _privateConstructorUsedError;
-  String get message => throw _privateConstructorUsedError;
+  int get message => throw _privateConstructorUsedError;
   int get cnt => throw _privateConstructorUsedError;
   List<ForecastElement> get list => throw _privateConstructorUsedError;
   City get city => throw _privateConstructorUsedError;
@@ -40,7 +40,7 @@ abstract class $ForecastWeatherCopyWith<$Res> {
   @useResult
   $Res call(
       {String cod,
-      String message,
+      int message,
       int cnt,
       List<ForecastElement> list,
       City city});
@@ -75,7 +75,7 @@ class _$ForecastWeatherCopyWithImpl<$Res, $Val extends ForecastWeather>
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       cnt: null == cnt
           ? _value.cnt
           : cnt // ignore: cast_nullable_to_non_nullable
@@ -110,7 +110,7 @@ abstract class _$$ForecastWeather$ImplCopyWith<$Res>
   @useResult
   $Res call(
       {String cod,
-      String message,
+      int message,
       int cnt,
       List<ForecastElement> list,
       City city});
@@ -144,7 +144,7 @@ class __$$ForecastWeather$ImplCopyWithImpl<$Res>
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       cnt: null == cnt
           ? _value.cnt
           : cnt // ignore: cast_nullable_to_non_nullable
@@ -166,7 +166,7 @@ class __$$ForecastWeather$ImplCopyWithImpl<$Res>
 class _$ForecastWeather$Impl implements ForecastWeather$ {
   const _$ForecastWeather$Impl(
       {this.cod = '',
-      this.message = '',
+      this.message = 0,
       this.cnt = 0,
       final List<ForecastElement> list = const <ForecastElement>[],
       required this.city})
@@ -180,7 +180,7 @@ class _$ForecastWeather$Impl implements ForecastWeather$ {
   final String cod;
   @override
   @JsonKey()
-  final String message;
+  final int message;
   @override
   @JsonKey()
   final int cnt;
@@ -236,7 +236,7 @@ class _$ForecastWeather$Impl implements ForecastWeather$ {
 abstract class ForecastWeather$ implements ForecastWeather {
   const factory ForecastWeather$(
       {final String cod,
-      final String message,
+      final int message,
       final int cnt,
       final List<ForecastElement> list,
       required final City city}) = _$ForecastWeather$Impl;
@@ -247,7 +247,7 @@ abstract class ForecastWeather$ implements ForecastWeather {
   @override
   String get cod;
   @override
-  String get message;
+  int get message;
   @override
   int get cnt;
   @override

@@ -12,5 +12,6 @@ class Snow with _$Snow {
     @Default(0) @JsonKey(name: '3h') double the3H,
   }) = Snow$;
 
-  factory Snow.fromJson(Map<String, dynamic> json) => _$SnowFromJson(Map<String, dynamic>.from(json));
+  factory Snow.fromJson(Map<String, dynamic> json) =>
+      _$SnowFromJson(Map<String, dynamic>.from(json));
 }

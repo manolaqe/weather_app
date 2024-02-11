@@ -1,5 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: always_specify_types
+
 part of 'forecast_element.dart';
 
 // **************************************************************************
@@ -27,7 +29,7 @@ _$ForecastElement$Impl _$$ForecastElement$ImplFromJson(
       snow: json['snow'] == null
           ? null
           : Snow.fromJson(json['snow'] as Map<String, dynamic>),
-      dtTxt: json['dtTxt'] as String,
+      dtTxt: json['dt_txt'] as String? ?? '',
     );
 
 Map<String, dynamic> _$$ForecastElement$ImplToJson(
@@ -42,5 +44,5 @@ Map<String, dynamic> _$$ForecastElement$ImplToJson(
       'pop': instance.pop,
       'rain': instance.rain,
       'snow': instance.snow,
-      'dtTxt': instance.dtTxt,
+      'dt_txt': instance.dtTxt,
     };

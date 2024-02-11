@@ -1,5 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: always_specify_types
+
 part of 'forecast_weather.dart';
 
 // **************************************************************************
@@ -10,7 +12,7 @@ _$ForecastWeather$Impl _$$ForecastWeather$ImplFromJson(
         Map<String, dynamic> json) =>
     _$ForecastWeather$Impl(
       cod: json['cod'] as String? ?? '',
-      message: json['message'] as String? ?? '',
+      message: json['message'] as int? ?? 0,
       cnt: json['cnt'] as int? ?? 0,
       list: (json['list'] as List<dynamic>?)
               ?.map((e) => ForecastElement.fromJson(e as Map<String, dynamic>))

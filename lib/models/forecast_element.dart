@@ -22,7 +22,8 @@ class ForecastElement with _$ForecastElement {
     @Default(0) double pop,
     Rain? rain,
     Snow? snow,
-    required String dtTxt,
+    // ignore: invalid_annotation_target
+    @Default('') @JsonKey(name: 'dt_txt') String dtTxt,
   }) = ForecastElement$;
 
   factory ForecastElement.fromJson(Map<String, dynamic> json) =>

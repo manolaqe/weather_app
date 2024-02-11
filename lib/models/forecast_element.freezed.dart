@@ -29,6 +29,7 @@ mixin _$ForecastElement {
   double get pop => throw _privateConstructorUsedError;
   Rain? get rain => throw _privateConstructorUsedError;
   Snow? get snow => throw _privateConstructorUsedError;
+  @JsonKey(name: 'dt_txt')
   String get dtTxt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -53,7 +54,7 @@ abstract class $ForecastElementCopyWith<$Res> {
       double pop,
       Rain? rain,
       Snow? snow,
-      String dtTxt});
+      @JsonKey(name: 'dt_txt') String dtTxt});
 
   $MainCopyWith<$Res> get main;
   $CloudsCopyWith<$Res> get clouds;
@@ -201,7 +202,7 @@ abstract class _$$ForecastElement$ImplCopyWith<$Res>
       double pop,
       Rain? rain,
       Snow? snow,
-      String dtTxt});
+      @JsonKey(name: 'dt_txt') String dtTxt});
 
   @override
   $MainCopyWith<$Res> get main;
@@ -295,7 +296,7 @@ class _$ForecastElement$Impl implements ForecastElement$ {
       this.pop = 0,
       this.rain,
       this.snow,
-      required this.dtTxt})
+      @JsonKey(name: 'dt_txt') this.dtTxt = ''})
       : _weather = weather;
 
   factory _$ForecastElement$Impl.fromJson(Map<String, dynamic> json) =>
@@ -330,6 +331,7 @@ class _$ForecastElement$Impl implements ForecastElement$ {
   @override
   final Snow? snow;
   @override
+  @JsonKey(name: 'dt_txt')
   final String dtTxt;
 
   @override
@@ -396,7 +398,7 @@ abstract class ForecastElement$ implements ForecastElement {
       final double pop,
       final Rain? rain,
       final Snow? snow,
-      required final String dtTxt}) = _$ForecastElement$Impl;
+      @JsonKey(name: 'dt_txt') final String dtTxt}) = _$ForecastElement$Impl;
 
   factory ForecastElement$.fromJson(Map<String, dynamic> json) =
       _$ForecastElement$Impl.fromJson;
@@ -420,6 +422,7 @@ abstract class ForecastElement$ implements ForecastElement {
   @override
   Snow? get snow;
   @override
+  @JsonKey(name: 'dt_txt')
   String get dtTxt;
   @override
   @JsonKey(ignore: true)
