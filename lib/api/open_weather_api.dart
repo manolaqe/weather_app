@@ -96,7 +96,6 @@ class OpenWeatherApi {
 
     final List<dynamic> json = jsonDecode(response.body) as List<dynamic>;
 
-    // ignore: avoid_dynamic_calls
     final LocationData locationData = LocationData(lat: json.first['lat'] as double, lon: json.first['lon'] as double);
 
     return locationData;
